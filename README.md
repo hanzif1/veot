@@ -21,7 +21,7 @@ The framework operates through a four-stage structured pipeline designed for hig
 
 Generates a diverse set of thought trajectories $H = \{h_1, h_2, ..., h_k\}$ as a conditional probability distribution:
 
-$$P(h_{i}|V,Q)=\prod_{t=1}^{t}P(z_{t}|V,Q,z_{<t})$$
+$$ P(h_{i}|V,Q)=\prod_{t=1}^{t}P(z_{t}|V,Q,z_{<t}) $$
 
 ### 2. Grounder Module
 
@@ -62,9 +62,9 @@ MA-VideoToT consistently outperforms state-of-the-art models across major benchm
 
 ### Installation
 
-Bash
 
-```
+
+```Bash
 git clone https://github.com/anonymous/MA-VideoToT.git
 cd MA-VideoToT
 pip install -r requirements.txt
@@ -72,9 +72,9 @@ pip install -r requirements.txt
 
 ### Basic Inference
 
-Python
 
-```
+
+```Python
 from ma_videotot import VideoToTAgent
 
 # Initialize the 2B model
